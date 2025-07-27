@@ -1,9 +1,13 @@
 from voice import speak     # Custom Module
 import requests             # For making HTTP API requests (weather, news)
+from dotenv import load_dotenv
+import os
 
 # Weather Information using OpenWeatherMap API
 def get_weather(city):
-    weather_api = "3b126e8806101a99d8001ef8eeb21247"    # Your API key
+
+    load_dotenv()
+    weather_api = os.getenv("WEATHER_API_KEY")   # Your API key
     base_url = "http://api.openweathermap.org/data/2.5/weather"
     params = {
         'q': city,               # City name

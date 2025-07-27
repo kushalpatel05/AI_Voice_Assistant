@@ -20,7 +20,7 @@ import comtypes                          # Required by pycaw
 # Date and Time
 from datetime import datetime            # Get current system time
 import pytz                              # Handle timezone (IST)
-
+from dotenv import load_dotenv
 
 # Get current IST date and time
 def get_current_ist_time():
@@ -135,11 +135,12 @@ def processcommand(c):
     if "time" in c or "date" in c:
         current_time = get_current_ist_time()      # Get current time in IST
         speak(f"The current date and time is {current_time}")
-        return "break"
+        return "break"  
 
     # News
     if "news" in c:
-        newsapi = "2639d05cab4e465daab6bddde129d5a1"    # News API key
+        load_dotenv()
+        newsapi = os.getenv("NEWS_API_KEY")     # News API key
         speak("Getting the latest top news.")
         r = requests.get(f"https://newsapi.org/v2/top-headlines?country=us&apiKey={newsapi}")
         if r.status_code == 200:

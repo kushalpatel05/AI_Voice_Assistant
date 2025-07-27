@@ -14,6 +14,7 @@ def aiprocess(command):
             messages.append({"role": "user", "content": q})
             messages.append({"role": "assistant", "content": a})
         messages.append({"role": "user", "content": command})       # User's current question
+        
         load_dotenv()
         client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
