@@ -6,10 +6,10 @@ It integrates APIs (Groq, Weather, News) and OS-level features to act as your pe
 ## Features
 - Security Feature: Includes a basic password lock for initial access. of Jarvis.
 - Voice-Activated Control: Initiate interaction by simply saying "Jarvis."
-- System Commands:
-      - Volume Control: Adjust volume up or down.    
-      - Brightness Control: Increase or decrease screen brightness.     
-      - Power Management: Shut down, restart, log out, or put the computer to sleep.    
+- System Commands:     
+            - Volume Control: Adjust volume up or down.            
+            - Brightness Control: Increase or decrease screen brightness.          
+            - Power Management: Shut down, restart, log out, or put the computer to sleep.       
 - Application Launcher: Open commonly used applications such as Notepad, VS Code, Word, Chrome, and many others with voice commands.
 - Media Playback Control: Play/pause, skip to the next, or go back to the previous song using universal media key simulations. 
 - Web Browse: Open popular websites (like Google, YouTube, Github, etc.) directly through voice. 
