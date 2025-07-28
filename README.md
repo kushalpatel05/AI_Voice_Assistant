@@ -34,16 +34,51 @@ It integrates APIs (Groq, Weather, News) and OS-level features to act as your pe
 - os, sys, subprocess, re, datetime : Standard Python libraries for system interaction, process management, string manipulation, and date/time operations.                                     
 
 ## Setup and Installation
-Follow these steps to get Jarvis up and running on your local machine:-                 
-1. Clone the Repository                        
-   git clone https://github.com/YourGitHubUsername/Jarvis-AI-Assistant.git         
-   cd Jarvis-AI-Assistant
-2. Create a Virtual Environment (Recommended)                        
-   python -m venv .venv                        
-    # On Windows                        
-      .\.venv\Scripts\activate                        
-    # On macOS/Linux                        
-      source .venv/bin/activate                           
+Follow these steps to get Jarvis up and running on your local machine:-                
+* ### 1. Clone the Repository                                    
+    Start by cloning the Jarvis AI Assistant repository to your local machine:                                    
+    ```bash                                                
+    git clone [https://github.com/YourGitHubUsername/Jarvis-AI-Assistant.git](https://github.com/YourGitHubUsername/Jarvis-AI-Assistant.git)
+    cd Jarvis-AI-Assistant
+    ```
+* ### 2. Create a Virtual Environment (Recommended)
+    It's highly recommended to use a virtual environment to manage project dependencies and avoid conflicts with other Python projects.                        
+    ```bash
+    python -m venv .venv
+    ```
+    Activate the virtual environment:
+    * **On Windows:**
+        ```bash
+        .\.venv\Scripts\activate
+        ```
+    * **On macOS/Linux:**
+        ```bash
+        source .venv/bin/activate
+        ```
+* ### 3. Install Dependencies
+    Once your virtual environment is active, install all the necessary Python libraries using `pip`:
+    ```bash
+    pip install -r requirements.txt
+    ```
+* ### 4. Obtain API Keys
+    Jarvis integrates with several external services. To enable all features, you'll need to obtain API keys for the following and store them securely:
+    * **Groq API Key**: For conversational AI.
+        1.  Visit [Groq](https://groq.com/) and sign up for an account.
+        2.  Navigate to your API Keys section and generate a new key.
+    * **OpenWeatherMap API Key**: For real-time weather information.
+        1.  Go to [OpenWeatherMap](https://openweathermap.com/api) and create a free account.
+        2.  Find your API key in your account dashboard.
+    * **News API Key**: For fetching news headlines.
+        1.  Head over to [News API](https://newsapi.org/) and sign up.
+        2.  Obtain your API key from your developer account.
+* ### 5. Configure Environment Variables
+    Create a file named `.env` in the root directory of your `Jarvis-AI-Assistant` project (the same folder where `main.py` is located). Add your newly obtained API keys to this file in the following format:
+    ```dotenv
+    GROQ_API_KEY="your_groq_api_key_here"
+    WEATHER_API_KEY="your_openweathermap_api_key_here"
+    NEWS_API_KEY="your_news_api_key_here"
+    ```
+    **Important**: The `.env` file is included in the `.gitignore` to prevent your sensitive API keys from being accidentally committed to your public repository. **Never share your `.env` file.**
 
 
 
