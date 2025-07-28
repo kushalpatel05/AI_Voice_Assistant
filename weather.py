@@ -1,6 +1,6 @@
-from voice import speak     # Custom Module
-import requests             # For making HTTP API requests (weather, news)
-from dotenv import load_dotenv
+from voice import speak             # Custom Module
+import requests                     # For making HTTP API requests (weather, news)
+from dotenv import load_dotenv      # used to load environment variables from a .env file into your program's environment. 
 import os
 
 # Weather Information using OpenWeatherMap API

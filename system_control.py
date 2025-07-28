@@ -107,9 +107,10 @@ def processcommand(c):
         "youtube": "https://youtube.com",
         "facebook": "https://facebook.com",
         "instagram": "https://instagram.com",
-        "linkedin": "https://linkedin.com",
+        "whatsapp": "https://www.whatsapp.com",
         "hotstar": "https://hotstar.com",
-        "chrome": "https://chrome.com"
+        "chrome": "https://chrome.com",
+        "github": "https://github.com"
     }
     if c.startswith("open"):
         site = c.replace("open", "").strip()   # Extract Website name
