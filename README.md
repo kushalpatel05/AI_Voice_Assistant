@@ -19,7 +19,19 @@ It integrates APIs (Groq, Weather, News) and OS-level features to act as your pe
 - Live Weather Information: Get current weather details (temperature, description, humidity, wind speed) for any specified city using the OpenWeatherMap API. 
 - Conversational AI: Engage in natural language conversations powered by the Groq API (utilizing the LLaMA 4 model) with built-in conversation memory for context.
 
-
+## Technologies Used
+Python 3.12.6: The core programming language.
+pyttsx3: Offline Text-to-Speech (TTS) engine for Jarvis's voice output.
+Speech_Recognition: For converting spoken language into text using Google Speech Recognition.
+pycaw: Windows-specific audio device control for volume management. 
+screen_brightness_control: For adjusting screen brightness. 
+pyautogui: Automates keyboard and mouse interactions, used for media controls. 
+requests: For making HTTP requests to external APIs (News API, OpenWeatherMap API). 
+webbrowser: To open URLs in the default web browser. 
+pytz: For accurate timezone handling (specifically IST). 
+python-dotenv: To manage environment variables securely (API keys). 
+Groq API: Powers the conversational AI, utilizing the LLaMA 4 model for intelligent responses.
+os, sys, subprocess, re, datetime: Standard Python libraries for system interaction, process management, string manipulation, and date/time operations. 
 
 
 
