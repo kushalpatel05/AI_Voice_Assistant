@@ -80,10 +80,38 @@ Follow these steps to get Jarvis up and running on your local machine:-
     ```
     **Important**: The `.env` file is included in the `.gitignore` to prevent your sensitive API keys from being accidentally committed to your public repository. **Never share your `.env` file.**
 
-
-
-
-
+## How to Run
+Once you've completed the setup and installation steps, follow these instructions to launch and interact with Jarvis:
+* ### 1. Activate Your Virtual Environment
+    It's crucial to ensure your virtual environment is active before running the assistant. If you closed your terminal or opened a new one, reactivate it using the appropriate command:
+    * **On Windows:**
+        ```bash
+        .\.venv\Scripts\activate
+        ```
+    * **On macOS/Linux:**
+        ```bash
+        source .venv/bin/activate
+        ```
+* ### 2. Start the Assistant
+    Navigate to the root directory of your project (where `main.py` is located) and execute the main script:
+    ```bash
+    python main.py
+    ```
+* ### 3. Initializing Jarvis
+    Upon launching, Jarvis will:
+    * Perform an initial setup and say "Initializing Jarvis...".
+    * If a password lock is enabled (configurable in `security.py`), it will prompt you for the password first.
+    * Once initialized, Jarvis will start listening for its wake word(Jarvis).
+* ### 4. Interacting with Jarvis
+    To begin interacting:
+    * **Say "Jarvis"**: This is the wake word that activates the assistant. Jarvis will respond with "Ya" and "How may I help you?".
+    * **Give a Command**: After the prompt, speak your command clearly. For example:
+        * "Open Google"
+        * "Play music[music_name] on Youtube Music"
+        * "What's the weather in London?"
+        * "Tell me the news"
+        * "What is the future of a Data Scientist?" (if using the AI for general queries)
+    * **To Exit**: Say "exit" or "stop" at any point to terminate the program.
 
 
 
