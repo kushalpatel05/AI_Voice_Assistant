@@ -108,9 +108,9 @@ Once you've completed the setup and installation steps, follow these instruction
     * **Give a Command**: After the prompt, speak your command clearly. For example:
         * "Open Google"
         * "Play music[music_name] on Youtube Music"
-        * "What's the weather in London?"
-        * "Tell me the news"
-        * "What is the future of a Data Scientist?" (if using the AI for general queries)
+        * "What's the weather in London?" (using the weather API)
+        * "Tell me the news" (NEWS API)
+        * "What is the future of a Data Scientist?" (using the GROQ's API for general queries)
     * **To Exit**: Say "exit" or "stop" at any point to terminate the program.
 
 
