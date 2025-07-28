@@ -33,15 +33,12 @@ It integrates APIs (Groq, Weather, News) and OS-level features to act as your pe
 - Groq API : Powers the conversational AI, utilizing the LLaMA 4 model for intelligent responses.                                    
 - os, sys, subprocess, re, datetime : Standard Python libraries for system interaction, process management, string manipulation, and date/time operations.                                     
 
-
-Setup and Installation
-Follow these steps to get Jarvis up and running on your local machine:
-
+## Setup and Installation
+Follow these steps to get Jarvis up and running on your local machine:-                 
 1. Clone the Repository
-Bash
+   git clone https://github.com/YourGitHubUsername/Jarvis-AI-Assistant.git         
+   cd Jarvis-AI-Assistant
 
-git clone https://github.com/YourGitHubUsername/Jarvis-AI-Assistant.git
-cd Jarvis-AI-Assistant
 
 
 
